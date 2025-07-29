@@ -20,4 +20,4 @@ jobs:
           scan-ref: .
           ignore-unfixed: true
           severity: HIGH,CRITICAL
-
+          exit-code: 1 # 🔥 FAILS the job if any findings are detected
