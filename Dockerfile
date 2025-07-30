@@ -8,7 +8,7 @@ RUN groupadd --system appuser && useradd --system --create-home --gid appuser ap
 WORKDIR /home/appuser
 
 # Install any required packages (example: update and install curl)
-RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y curl --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 # Switch to non-root user
 USER appuser
