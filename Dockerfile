@@ -1,5 +1,5 @@
 # Use Debian as the base image
-FROM debian:12.6
+FROM debian:bookworm-20250929
 
 # Create a non-root user and group
 RUN groupadd --system appuser && useradd --system --create-home --gid appuser appuser 
